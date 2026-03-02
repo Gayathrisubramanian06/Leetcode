@@ -1,0 +1,20 @@
+class Solution(object):
+    def judgeCircle(self, moves):
+        """
+        :type moves: str
+        :rtype: bool
+        """
+        init=[0,0]
+        for i in range(len(moves)):
+            if moves[i] == "L":
+                      init[0] -= 1
+            elif moves[i] == "R":
+                      init[0] += 1
+            elif moves[i] == "U":
+                    init[1] += 1
+            elif moves[i] == "D":
+                    init[1] -= 1
+
+        return init[0]==0 and init[1]==0
+
+                     

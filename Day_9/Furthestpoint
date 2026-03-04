@@ -1,0 +1,17 @@
+class Solution(object):
+    def furthestDistanceFromOrigin(self, moves):
+        """
+        :type moves: str
+        :rtype: int
+        """
+        count=0
+        dash=0
+        for i in moves:
+           if  i == 'L':
+              count-=1
+           elif i == 'R':
+              count+=1
+           else:
+              dash+=1
+
+        return abs(count)+dash

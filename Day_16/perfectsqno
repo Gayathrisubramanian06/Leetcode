@@ -6,14 +6,12 @@ class Solution(object):
         """
         l=1
         high=num
-        while(l<high):
-            mid=(l+high)/2
+        while(l<=high):
+            mid=(l+high)//2
             if mid*mid==num:
                 return True
-                break
             elif mid*mid>num:
                 high=mid-1
             else:
                 l=mid+1
         return False
-                

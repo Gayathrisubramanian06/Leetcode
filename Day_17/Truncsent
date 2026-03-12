@@ -1,0 +1,13 @@
+class Solution(object):
+    def truncateSentence(self, s, k):
+        """
+        :type s: str
+        :type k: int
+        :rtype: str
+        """
+        s=s.split(" ")
+        s1=[]
+        for i in range(k):
+            s1.append(s[i])
+        
+        return " ".join(s1)
